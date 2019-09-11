@@ -1,0 +1,143 @@
+<div id="top"></div>
+<nav class="nav fixed-top navbar-expand nav-pills nav-justified header">
+    <button (click)="up()" class="nav-item nav-link btn btn-outline-light contact" data-placement="bottom" data-content="Welcome"id="popover" data-trigger="hover"  data-container="body" data-toggle="popover" href="#">Home</button>
+    <button (click)="down1()" class="nav-link nav-item btn btn-outline-light about" data-placement="bottom" data-content="I have a background as a touring musician, film-composer and Grammy Award winning producer. Click for more info."id="popover" data-trigger="hover"  data-container="body" data-toggle="popover"href="#">About</button>
+    <button (click)="down2()" class="nav-item nav-link btn btn-outline-light portfolio" data-placement="bottom" data-content="See some projects"id="popover" data-trigger="hover"  data-container="body" data-toggle="popover" href="#">Portfolio</button>
+    <button  (click)="down3()" class="nav-item nav-link btn btn-outline-light contact " data-placement="bottom" data-content="Let's Create Something"id="popover" data-trigger="hover" data-container="body" data-toggle="popover"  href="#">Contact</button>
+    <!-- <div class="nav-item  dropdown">
+      <button class="dropbtn btn btn-secondary dropdown-toggle">Blogs</button>
+      <div class=" rounded dropdown-content">
+        <a href="#">The Future of Tech in Music</a>
+        <a href="#">Will Robots Rule the Future?</a>
+        <a href="#">Coding is Awesome</a>
+      </div>
+    </div> -->
+</nav>
+<div class="text-center"id="overlay" (click)="hide()">
+   <div  id="text"><div class="card w-75">
+      <div class="card-body">
+          <form>
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Want to collaborate?</label>
+                </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Name</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Leave a Note</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+      </div>
+    </div></div>
+</div>
+<body>
+  <div id="container2" class="container1">
+	  <h3><a href="" target="_blank"><svg xmlns="" x="0px" y="0px"
+    width="18" height="18"
+    viewBox=""
+    style=" fill:#000000;"><g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><path d="M0,172v-172h172v172z" fill="none"></path><g fill="#eeeeee"><path d="M143.19336,21.43001c-0.26705,0.00844 -0.53341,0.03181 -0.79785,0.06999h-34.89551c-2.58456,-0.03655 -4.98858,1.32136 -6.29153,3.55376c-1.30295,2.2324 -1.30295,4.99342 0,7.22582c1.30295,2.2324 3.70697,3.59031 6.29153,3.55376h18.53256l-66.59961,66.59961c-1.8722,1.79752 -2.62637,4.46674 -1.97164,6.97823c0.65473,2.51149 2.61604,4.4728 5.12753,5.12753c2.51149,0.65473 5.18071,-0.09944 6.97823,-1.97165l66.59961,-66.59961v18.53255c-0.03655,2.58456 1.32136,4.98858 3.55376,6.29153c2.2324,1.30295 4.99342,1.30295 7.22582,0c2.2324,-1.30295 3.59031,-3.70697 3.55376,-6.29153v-34.9235c0.28889,-2.08845 -0.35639,-4.19816 -1.76411,-5.76769c-1.40772,-1.56953 -3.43507,-2.43964 -5.54253,-2.3788zM35.83333,21.5c-7.83362,0 -14.33333,6.49972 -14.33333,14.33333v100.33333c0,7.83362 6.49972,14.33333 14.33333,14.33333h100.33333c7.83362,0 14.33333,-6.49972 14.33333,-14.33333v-43c0.03655,-2.58456 -1.32136,-4.98858 -3.55376,-6.29153c-2.2324,-1.30295 -4.99342,-1.30295 -7.22582,0c-2.2324,1.30295 -3.59031,3.70697 -3.55376,6.29153v43h-100.33333v-100.33333h43c2.58456,0.03655 4.98858,-1.32136 6.29153,-3.55376c1.30295,-2.2324 1.30295,-4.99342 0,-7.22582c-1.30295,-2.2324 -3.70697,-3.59031 -6.29153,-3.55376z"></path></g></g></svg></a></h3>
+	    <h5><a href="" target="_blank"> </a></h5>
+    <div id="test">
+        <h1 class="name">​<span class="meet">Meet</span> Jesse Ingalls</h1>
+    </div>​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​​
+    <div class="typing">
+      <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+      <h1 class="stack">He is a Fullstack developer in
+      <span
+        class="txt-rotate"
+        data-period="2000"
+        data-rotate='[ "JavaScript(MEAN).", "Python.", "JAVA.", "digital music production."]'></span>
+        </h1>
+    </div>
+    <div class="btnDiv font-weight-lighter">
+      <button (click)="down1()" class="button "><span>Learn More</span></button>
+    </div>
+  </div>
+</body>
+<div class="wrap">
+  <div id="page2">
+    <div class="aboutHead">
+      <h1 class=" font-weight-bold aboutTitle">About</h1>
+    </div>
+    <div id="stage">
+        <a title="Before starting his coding journey..."><img src="https://wallpaperplay.com/walls/full/6/8/b/131319.jpg"  width="80%" height="500"></a>
+        <a title="He attended the University of Texas to study classical music"><img src="https://www.kxan.com/wp-content/uploads/sites/40/2019/01/sunrise5_1532615169346_49674645_ver1.0-1.jpg?w=2560&h=1440&crop=1" width="80%" height="500"></a>
+        <a title="He went on to play with such acclaimed artist as Ben Harper, Natalie Maines and Ringo"><img src="https://s3.amazonaws.com/berrics/images/rVbt8_benharper-album-mini-1200-horiz.jpg" width="80%" height="500"></a>
+        <a title="Won a Grammy Award as a Producer in 2014!"><img src="https://wallpapercave.com/wp/wp3963850.jpg" width="80%" height="500"></a>
+        <a title="While teaching himself audio engineering and digital recording..."><img src="https://wallpaperplay.com/walls/full/6/1/5/101014.jpg" width="80%" height="500"></a>
+        <a title="And Composing music for films like Antiquities (Now Available on Showtime!)"><img src="https://coverfiles.alphacoders.com/805/80529.jpg" width="80%" height="500"></a>
+        <a title="He developed a love and curiosity of web development"><img src="https://steamuserimages-a.akamaihd.net/ugc/431574499138750655/990FB12FE0E92D9DA0D1D83F25509005FC956E46/"  width="80%" height="500"></a>
+    </div>
+    <div class="logos logo1">
+      <img class="logos " src="https://aglowiditsolutions-6lohnuosd1nx.netdna-ssl.com/wp-content/uploads/2018/09/Hire-Mean-Stack-Developer.png">
+    </div>
+    <div class="logos logo2">
+      <img class="logos" src="http://pluspng.com/img-png/logo-javascript-png-node-js-logo-javascript-vector-png-266.png">
+    </div>
+    <div class="logos logo3">
+      <img class="logos" src="https://aptonic.com/blog/wp-content/uploads/2015/08/python-logo.png">
+    </div>
+    <div class="logos logo4">
+      <img class="logos" src="http://pluspng.com/img-png/jquery-logo-png-jquery-320.png">
+    </div>
+    <div class="logos logo5">
+      <img class="logos" src="data:image/jpeg;base64,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">
+    </div>
+    </div>
+    <div id="page3">
+      <div class="portfolioHead">
+        <h1 class="projects">Projects</h1>
+      </div>
+      <div class="projectImg">
+        <div class="textWithBlurredBg project1">
+          <a href="https://www.youtube.com/watch?v=PS_Sxrm_kuk&t=6s"><img class="pro" src="assets/img/ArtistHub.png"></a>
+          <h2>JAVA PROJECT <br> Learn More</h2>
+
+        </div>
+        <div class="textWithBlurredBg">
+          <a href="https://www.innerdomain.org/index.php"><img class="pro" src="https://i.pinimg.com/originals/d0/3a/c4/d03ac4890025efb6335ee2fdbcc57906.jpg"></a>
+          <h2>JAVASCRIPT PROJECT Innerdomain.org Learn More</h2>
+
+        </div>
+        <div class="textWithBlurredBg">
+          <a href="https://www.benharper.com"><img class="pro" src="https://m.media-amazon.com/images/I/615NKtGvBLL.jpg"></a>
+          <h2>Co-Producer Grammy Winning Album</h2>
+
+        </div>
+      </div>
+    </div>
+    <div id="slantedDiv">
+        <div (click)="down3()" class="create2"><h2 class="words2">Want to collaborate?</h2></div>
+        <div class="contactTitle"><h1>Contact</h1></div>
+        <div class="create"><h2 class="words">Have a question?</h2></div>
+    </div>
+    <div class="page5">
+      <div class="form-box">
+        <div class="form1 text-center">
+            <form #emailForm="ngForm" id="target" action="">
+                <input type="text" class="inputs" placeholder="Name" name="user.name" [(ngModel)]="user.name">
+                <input type="email" class="inputs2"placeholder="Enter Email" name="user.email" [(ngModel)]="user.email">
+                <textarea class="inputs3" rows="4" placeholder="Comment" name="user.comment" [(ngModel)]="user.comment"></textarea>
+                <button (click)="handleSubmit()" type="submit" class="btn btn-secondary">Submit</button>
+            </form>
+             <p class="errors" *ngFor="let e of errors">{{ e }}</p>
+        </div>
+        <i  (click)="up()" class="fa fa-chevron-circle-up arrow " aria-hidden="true"></i>
+      </div>
+      <div class="footer">
+        <a href="https://www.linkedin.com/in/jesse-ingalls/"><img class="icons" src="https://image.flaticon.com/icons/svg/34/34227.svg"></a>
+        <a href="https://www.youtube.com/watch?v=PS_Sxrm_kuk&t=9s"><img class="icons2" src="https://image.flaticon.com/icons/png/512/16/16030.png"></a>
+        <a href="https://github.com/jesseingalls"><img class="icons3" src="https://cdn.freebiesupply.com/logos/large/2x/github-icon-logo-png-transparent.png"></a><
+      </div>
+    </div>
+</div>
+
+<router-outlet></router-outlet>
