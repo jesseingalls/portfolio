@@ -122,13 +122,25 @@
     <div class="page5">
       <div class="form-box">
         <div class="form1 text-center">
-            <form name="infoForm" action="" method="POST" netlify data-netlify="true">
+<!--             <form name="infoForm" action="" method="POST" netlify data-netlify="true">
                 <input type="text" class="inputs" placeholder="Name" name="name">
                 <input type="email" class="inputs2"placeholder="Enter Email" name="email">
                 <textarea class="inputs3" rows="4" placeholder="Comment" name="comment"></textarea>
                 <button type="submit" class="btn btn-secondary">Submit</button>
-            </form>
-             <p class="errors" *ngFor="let e of errors">{{ e }}</p>
+            </form> -->
+		<form name="contact" method="POST" data-netlify-recaptcha="true" data-netlify="true">
+  			<p>
+    				<label>Email: <input type="text" name="name" /></label>
+  			</p>
+  			<p>
+    				<label>Message: <textarea name="message"></textarea></label>
+  			</p>
+  				<div data-netlify-recaptcha="true"></div>
+  			<p>
+    				<button type="submit">Send</button>
+  			</p>
+		</form>
+<!--              <p class="errors" *ngFor="let e of errors">{{ e }}</p> -->
         </div>
         <i  (click)="up()" class="fa fa-chevron-circle-up arrow " aria-hidden="true"></i>
       </div>
