@@ -105,27 +105,24 @@ export class AppComponent implements OnInit{
     toContact();
   }
   handleSubmit(){
-     $(function() {
-          alert("Success!");
-       })
-       toHome();
-//     this.errors = [];
-//     console.log("handle");
-//     this._http.createUser(this.user).subscribe(data => {
-//       if(data['errors']){
-//          console.log(data['errors']);
-//         for (var key in data['errors']){
-//           this.errors.push(data['errors'][key]['message']);
-//         }
-//         console.log(this.errors);
-//       }else {
-//         $(function() {
-//           alert("Thank you for your contact!");
-//         })
+    $(function() {
+         alert("Success!");
+    })
+    toHome();
+    this.errors = [];
+    console.log("handle");
+    this._http.createUser(this.user).subscribe(data => {
+      if(data['errors']){
+         console.log(data['errors']);
+        for (var key in data['errors']){
+          this.errors.push(data['errors'][key]['message']);
+        }
+        console.log(this.errors);
+      }else {
 //         toHome();
-//         this.user = {name: "", email: "", comment: ""};
-//         this._router.navigate(['']);
-//       }
-//     });
+        this.user = {name: "", email: "", comment: ""};
+        this._router.navigate(['']);
+      }
+    });
   }
 }
