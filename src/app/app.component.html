@@ -126,7 +126,7 @@
                 <input type="text" class="inputs" placeholder="Name" name="user.name" [(ngModel)]="user.name">
                 <input type="email" class="inputs2"placeholder="Enter Email" name="user.email" [(ngModel)]="user.email">
                 <textarea class="inputs3" rows="4" placeholder="Comment" name="user.comment" [(ngModel)]="user.comment"></textarea>
-                <button (click)="handleSubmit()" type="submit" class="btn btn-secondary">Submit</button>
+                <button type="submit" class="btn btn-secondary">Submit</button>
             </form>
              <p class="errors" *ngFor="let e of errors">{{ e }}</p>
         </div>
