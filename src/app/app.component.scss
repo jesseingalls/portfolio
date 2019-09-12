@@ -108,7 +108,7 @@ body {
 	height: 100vh;
 	font-family: "Exo", sans-serif;
 	color: #fff;
-	background: linear-gradient(-45deg, #000000, #222, #474d5f,  #66728f,rgb(72, 78, 170), rgb(11, 13, 170));
+	background: linear-gradient(-45deg, rgb(11, 13, 170), #000000, #222, #474d5f,  #66728f,rgb(72, 78, 170), rgb(11, 13, 170));
 	background-size: 400% 400%;
 	animation: gradientBG 15s ease infinite;
 }
