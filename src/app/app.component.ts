@@ -106,7 +106,7 @@ export class AppComponent implements OnInit{
   }
   handleSubmit(){
      $(function() {
-          alert("Thank you for your contact!");
+          alert("Success!");
        })
        toHome();
 //     this.errors = [];
