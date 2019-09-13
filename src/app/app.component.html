@@ -15,7 +15,7 @@
 </nav>
 <div class="text-center"id="overlay" (click)="hide()">
    <div  id="text"><div class="card w-75">
-      <div class="card-body">
+<!--       <div class="card-body">
           <form>
               <div class="form-group">
                   <label for="exampleFormControlTextarea1">Want to collaborate?</label>
@@ -33,9 +33,9 @@
                   <label for="exampleFormControlTextarea1">Leave a Note</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-              <button type="submit" class="btn btn-primary">Submit</button>
+              <button id="submitForm" type="submit" class="btn btn-primary">Submit</button>
             </form>
-      </div>
+      </div> -->
     </div></div>
 </div>
 <body>
@@ -122,11 +122,11 @@
     <div class="page5">
       <div class="form-box">
         <div class="form1 text-center">
-	<form name="infoForm" method="POST" data-netlify="true">
+	<form name="infoForm" id="infoForm" method="POST" data-netlify="true">
                 <input type="text" class="inputs" placeholder="Name" name="name"/>
                 <input type="email" class="inputs2"placeholder="Enter Email" name="email"/>
                 <textarea class="inputs3" rows="4" placeholder="Comment" name="comment"></textarea>
-                <button type="submit" class="btn btn-secondary">Submit</button>
+                <button id="submitForm" type="submit" class="btn btn-secondary">Submit</button>
          </form> 
 	
 <!--              <p class="errors" *ngFor="let e of errors">{{ e }}</p> -->
