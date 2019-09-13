@@ -82,6 +82,9 @@ export class AppComponent implements OnInit{
     $(".button").click(function(){
       $(".aboutTitle").animate({left: '44%'}, 'slow');
     });
+    $(‘#submitForm’).on(‘click’,function(){
+    $( “#infoForm” ).submit();
+});
   }
   down2(){
     toPortfolio();
@@ -110,7 +113,6 @@ export class AppComponent implements OnInit{
     })
     toHome();
     this.errors = [];
-    console.log("handle");
     this._http.createUser(this.user).subscribe(data => {
       if(data['errors']){
          console.log(data['errors']);
