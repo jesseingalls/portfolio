@@ -35,7 +35,9 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
     this.user = {name: "", email: "", comment: ""};
-
+    $("#submitForm").click(function(){
+      $("#infoForm”).submit();
+    });
     $(".about").click(function(){
       $(".aboutTitle").animate({left: '44%'}, 'slow');
     });
@@ -81,9 +83,6 @@ export class AppComponent implements OnInit{
     });
     $(".button").click(function(){
       $(".aboutTitle").animate({left: '44%'}, 'slow');
-    });
-    $("#submitForm").click(function(){
-      $("#infoForm”).submit();
     });
   }
   down2(){
