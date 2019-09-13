@@ -130,7 +130,13 @@
   			<div *ngIf="name.errors.minlength">
    			 	Name must be at least 4 characters long.
   			</div>
-                <input type="email" class="inputs2"placeholder="Enter Email" name="email"/>
+                <input type="email" required minlength="4" class="form-control inputs2" placeholder="Enter Email" name="email"/>
+			<div *ngIf="email.errors.required">
+   			 	Email is required.
+  			</div>
+  			<div *ngIf="email.errors.minlength">
+   			 	Email must be at least 4 characters long.
+  			</div>
                 <textarea class="inputs3" rows="4" placeholder="Comment" name="comment"></textarea>
                 <button id="submitForm" type="submit" class="btn btn-secondary">Submit</button>
 		<input type="hidden" name="form-name" value="infoForm" />
