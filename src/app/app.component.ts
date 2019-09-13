@@ -36,7 +36,8 @@ export class AppComponent implements OnInit{
   ngOnInit(){
     this.user = {name: "", email: "", comment: ""};
     $("#submitForm").click(function(){
-      $("#infoForm”).submit();
+//       $("#infoForm”).submit();
+      alert("success");
     });
     $(".about").click(function(){
       $(".aboutTitle").animate({left: '44%'}, 'slow');
