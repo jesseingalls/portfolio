@@ -82,8 +82,8 @@ export class AppComponent implements OnInit{
     $(".button").click(function(){
       $(".aboutTitle").animate({left: '44%'}, 'slow');
     });
-    $(‘#submitForm’).on(‘click’,function(){
-    $( “#infoForm” ).submit();
+    $('#submitForm').on('click',function(){
+    $("#infoForm” ).submit();
 });
   }
   down2(){
